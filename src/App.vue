@@ -1,32 +1,43 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div id="app">
+        <div class="nav">
+            <el-dropdown>
+              <span class="el-dropdown-link">
+                  <router-link to="/">Home</router-link>
+              </span>
+                <el-dropdown-menu slot="dropdown">
+                    <el-dropdown-item></el-dropdown-item>
+                    <el-dropdown-item>
+                        <router-link to="/about">About</router-link>
+                    </el-dropdown-item>
+                </el-dropdown-menu>
+            </el-dropdown>
+        </div>
+        <router-view/>
     </div>
-    <router-view/>
-  </div>
 </template>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+    #app {
+        font-family: 'Avenir', Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
 
-#nav {
-  padding: 30px;
-}
+        margin: 0;
+        padding: 0;
+    }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+    .nav{
+        height: 40px;
+        text-align: center;
+    }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+    .el-dropdown-link {
+        cursor: pointer;
+        color: #409EFF;
+    }
+
+    .el-icon-arrow-down {
+        font-size: 12px;
+    }
 </style>
