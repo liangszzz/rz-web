@@ -1,7 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-
+import '../assets/css/bootstrap.min.css'
+import '../assets/css/bootstrap-slider.min.css'
+import '../assets/css/font-awesome.min.css'
+import '../assets/css/owl.carousel.css'
+import '../assets/css/style.css'
 Vue.use(VueRouter)
 
 const routes = [
@@ -13,10 +17,7 @@ const routes = [
   {
     path: '/about',
     name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    component: () => import('../views/About.vue')
   }
 ]
 
