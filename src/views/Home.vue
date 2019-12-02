@@ -6,7 +6,7 @@
     <!-- Intro -->
     <section id="intro">
       <div class="owl-carousel">
-        <div class="item dark-overlay" style="background-image:url(../assets/image/car-1.jpg); background-size:100% 100%;">
+        <div class="item dark-overlay" :style="{backgroundImage:'url('+require('../assets/image/car-1.jpg')+')'}" style="background-image:url(../assets/image/car-1.jpg); background-size:100% 100%;">
           <div class="container">
             <div class="intro-text z-index text-center">
               <h1></h1>
@@ -14,7 +14,7 @@
             </div>
           </div>
         </div>
-        <div class="item dark-overlay" style="background-image:url(../assets/image/intro-img2.jpg)">
+        <div class="item dark-overlay" :style="{backgroundImage:'url('+require('../assets/image/intro-img1.jpg')+')'}">
           <div class="container">
             <div class="intro-text z-index text-center">
               <h1></h1>
@@ -22,7 +22,7 @@
             </div>
           </div>
         </div>
-        <div class="item dark-overlay" style="background-image:url(../assets/image/intro-img3.jpg)">
+        <div class="item dark-overlay" :style="{backgroundImage:'url('+require('../assets/image/intro-img2.jpg')+')'}">
           <div class="container">
             <div class="intro-text z-index text-center">
               <h1></h1>
@@ -43,25 +43,25 @@
         <div id="our-services">
           <div class="owl-carousel">
             <div class="item text-center">
-              <div class="service-icon"> <img src="assets/images/home-loan.png" alt="image"> </div>
+              <div class="service-icon"> <img src="../assets/image/home-loan.png" alt="image"> </div>
               <h5>信用贷款</h5>
               <p>信用贷款简介</p>
               <a href="#" class="btn btn-sm">了解详情</a>
             </div>
             <div class="item text-center">
-              <div class="service-icon"> <img src="assets/images/business-loan.png" alt="image"> </div>
+              <div class="service-icon"> <img src="../assets/image/business-loan.png" alt="image"> </div>
               <h5>企业贷款</h5>
               <p>企业贷款简介</p>
               <a href="#" class="btn btn-sm">了解详情</a>
             </div>
             <div class="item text-center">
-              <div class="service-icon"> <img src="assets/images/car-loan.png" alt="image"> </div>
+              <div class="service-icon"> <img src="../assets/image/car-loan.png" alt="image"> </div>
               <h5>车贷</h5>
               <p>车贷简介</p>
               <a href="#" class="btn btn-sm">了解详情</a>
             </div>
             <div class="item text-center">
-              <div class="service-icon"> <img src="assets/images/education-loan.png" alt="image"> </div>
+              <div class="service-icon"> <img src="../assets/image/education-loan.png" alt="image"> </div>
               <h5>教育贷款</h5>
               <p>教育贷款简介</p>
               <a href="#" class="btn btn-sm">了解详情</a>
@@ -131,7 +131,7 @@
             </p>
             <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;乐颂融租核心团队全部来自国内一线互金平台的高管，从2013年起投身于互联网金融行业当中，2017年成立乐颂融租，立志要成为小而专业的精英型企业。
             </p>
-            <a href="about.html" class="btn">查看详情</a>
+            <a href="/about" class="btn">查看详情</a>
           </div>
         </div>
       </div>

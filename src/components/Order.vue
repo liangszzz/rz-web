@@ -67,21 +67,3 @@
     }
 </script>
 
-<style scoped>
-
-    .btn-1 {
-
-    }
-
-    .text-1 {
-        font-size: 12px;
-        float: right;
-        padding: 3px 0;
-    }
-
-    .order {
-        width: 500px;
-        height: 400px;
-
-    }
-</style>

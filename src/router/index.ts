@@ -6,6 +6,7 @@ import '../assets/css/bootstrap-slider.min.css'
 import '../assets/css/font-awesome.min.css'
 import '../assets/css/owl.carousel.css'
 import '../assets/css/style.css'
+
 Vue.use(VueRouter)
 
 const routes = [
