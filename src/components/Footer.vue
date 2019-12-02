@@ -12,7 +12,8 @@
         </div>
         <div class="footer-bottom">
             <div class="container">
-                <p> Copyright 2019 | eCapital Loan Company </p>
+                <p> Copyright 2019 | eCapital Loan Company  <img src="../assets/image/icp.png">
+                    <a href="http://beian.miit.gov.cn/">粤ICP备17047379号</a></p>
             </div>
         </div>
     </footer>
