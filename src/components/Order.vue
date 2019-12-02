@@ -12,7 +12,7 @@
                     <br>
                     <br>
                     <div class="form-group">
-                        <input value="立即预约" class="btn" @click="submit">
+                        <input type="button" value="立即预约" class="btn" @click="submit">
                     </div>
                 </form>
             </div>

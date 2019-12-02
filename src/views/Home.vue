@@ -34,50 +34,67 @@
     </section>
     <!-- /Intro -->
 
-    <!-- Our-Services -->
-    <section id="services" class="section-padding gray-bg">
+    <section class="section-padding gray-bg">
       <div class="container">
         <div class="section-header text-center">
-          <h3>产品与服务</h3>
+          <h2>产品优势</h2>
         </div>
-        <div id="our-services">
-          <div class="owl-carousel">
-            <div class="item text-center">
-              <div class="service-icon"> <img src="../assets/image/home-loan.png" alt="image"> </div>
-              <h5>信用贷款</h5>
-              <p>信用贷款简介</p>
-              <a href="#" class="btn btn-sm">了解详情</a>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="features-box text-center">
+              <div class="features-icon"> <i class="fa fa-money"></i> </div>
+              <h5>1成首付，占用资金少！</h5>
             </div>
-            <div class="item text-center">
-              <div class="service-icon"> <img src="../assets/image/business-loan.png" alt="image"> </div>
-              <h5>企业贷款</h5>
-              <p>企业贷款简介</p>
-              <a href="#" class="btn btn-sm">了解详情</a>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="features-box text-center">
+              <div class="features-icon"> <i class="fa fa-car"></i> </div>
+              <h5>手续包办，当天提车！</h5>
             </div>
-            <div class="item text-center">
-              <div class="service-icon"> <img src="../assets/image/car-loan.png" alt="image"> </div>
-              <h5>车贷</h5>
-              <p>车贷简介</p>
-              <a href="#" class="btn btn-sm">了解详情</a>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="features-box text-center">
+              <div class="features-icon"> <i class="fa fa-address-card"></i> </div>
+              <h5>极速审批、拒绝等候！</h5>
             </div>
-            <div class="item text-center">
-              <div class="service-icon"> <img src="../assets/image/education-loan.png" alt="image"> </div>
-              <h5>教育贷款</h5>
-              <p>教育贷款简介</p>
-              <a href="#" class="btn btn-sm">了解详情</a>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="features-box text-center">
+              <div class="features-icon"> <i class="fa fa-lock"></i> </div>
+              <h5>厂商直供，车源有保障！</h5>
             </div>
-            <div class="item text-center">
-              <div class="service-icon"> <img src="assets/images/personal-loan.png" alt="image"> </div>
-              <h5>个人贷款</h5>
-              <p>个人贷款简介</p>
-              <a href="#" class="btn btn-sm">了解详情</a>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="features-box text-center">
+              <div class="features-icon"> <i class="fa fa-automobile"></i> </div>
+              <h5>低门槛，让人人都开得起车！</h5>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="features-box text-center">
+              <div class="features-icon"> <i class="fa fa-heart"></i> </div>
+              <h5>量身定制，灵活选择！</h5>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- /Our-Services -->
 
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2>业务模式</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="image-box"> <img src="../assets/image/progress-2.png" alt="image"> </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="image-box"> <img src="../assets/image/progress-1.png" alt="image"> </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Process -->
     <section id="proecess" class="section-padding">

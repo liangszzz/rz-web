@@ -992,7 +992,6 @@ ul.sub-menu ul.sub-menu {
 	margin: 0 auto;
 	right: -90px;
 	content: "";
-	background: url(../image/bg_pattern.png) no-repeat top right;
 	height: 120%;
 	z-index: -1;
 	width: 100%;
