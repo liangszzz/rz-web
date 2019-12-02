@@ -15,7 +15,7 @@
                 <div class="collapse navbar-collapse" id="navigation">
                     <ul class="nav navbar-nav">
                         <li><a href="/">主页</a></li>
-                        <li><a href="/about">关于我们</a></li>
+<!--                        <li><a href="/about">关于我们</a></li>-->
                     </ul>
                 </div>
             </div>

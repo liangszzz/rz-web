@@ -117,25 +117,25 @@
     <!-- /Process -->
 
     <!-- About-us -->
-    <section id="about-us" class="section-padding">
-      <div class="container">
-        <div class="section-header text-center">
-          <h3>关于乐颂</h3>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 order-12">
-            <div class="image-box"> <img src="../assets/image/700x510.jpg" alt="image"> </div>
-          </div>
-          <div class="col-lg-6">
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;乐颂融资租赁（深圳）有限公司（简称“乐颂融租”）是国内资深助力中小银行为代表的传统金融机构，实现互联网转型的平台服务商，为传统中小银行，提供合规安全的互联网金融资产一站式解决方案。
-            </p>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;乐颂融租核心团队全部来自国内一线互金平台的高管，从2013年起投身于互联网金融行业当中，2017年成立乐颂融租，立志要成为小而专业的精英型企业。
-            </p>
-            <a href="/about" class="btn">查看详情</a>
-          </div>
-        </div>
-      </div>
-    </section>
+<!--    <section id="about-us" class="section-padding">-->
+<!--      <div class="container">-->
+<!--        <div class="section-header text-center">-->
+<!--          <h3>关于乐颂</h3>-->
+<!--        </div>-->
+<!--        <div class="row">-->
+<!--          <div class="col-lg-6 order-12">-->
+<!--            <div class="image-box"> <img src="../assets/image/700x510.jpg" alt="image"> </div>-->
+<!--          </div>-->
+<!--          <div class="col-lg-6">-->
+<!--            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;乐颂融资租赁（深圳）有限公司（简称“乐颂融租”）是国内资深助力中小银行为代表的传统金融机构，实现互联网转型的平台服务商，为传统中小银行，提供合规安全的互联网金融资产一站式解决方案。-->
+<!--            </p>-->
+<!--            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;乐颂融租核心团队全部来自国内一线互金平台的高管，从2013年起投身于互联网金融行业当中，2017年成立乐颂融租，立志要成为小而专业的精英型企业。-->
+<!--            </p>-->
+<!--            <a href="/about" class="btn">查看详情</a>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </section>-->
     <!-- /About-us -->
 
 
