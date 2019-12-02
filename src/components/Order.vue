@@ -1,22 +1,22 @@
 <template>
     <div class="order">
-        <el-form label-width="100px" :label-position="left" :rules="rules" :model="ruleForm" ref="ruleForm">
-            <el-card class="box-card">
-                <div slot="header" class="clearfix">
-                    <span>我要预约</span>
-                    <span class="text-1">免费预约</span>
-                </div>
-                <div>
-                    <el-form-item label="手机号码" prop="phoneNo">
-                        <el-input type="phoneNo" v-model="ruleForm.phoneNo" autocomplete="off"></el-input>
-                    </el-form-item>
-                    <el-form-item>
-                        <el-button type="primary" @click="submit('ruleForm')">立即预约</el-button>
-                    </el-form-item>
-
-                </div>
-            </el-card>
-        </el-form>
+        <div class="info-box">
+            <div class="box-head">
+                <h5>在线预约</h5>
+            </div>
+            <div class="box-body">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" maxlength="11" placeholder="请填写手机号码" v-model="ruleForm.phoneNo">
+                    </div>
+                    <br>
+                    <br>
+                    <div class="form-group">
+                        <input value="立即预约" class="btn" @click="submit">
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -26,39 +26,43 @@
         Prop,
         Vue
     } from 'vue-property-decorator';
+    import { Message } from 'element-ui';
 
     @Component
     export default class Nav extends Vue {
 
         ruleForm = {
-            phoneNo: ""
+            phoneNo: "",
         };
 
-        validatePass = (rule: any, value: string, callback: any) => {
+
+        submit() {
+            const value=this.ruleForm.phoneNo;
             const telReg = /(^1[3|4|5|6|7|8|9]\d{9}$)|(^09\d{8}$)/;
             if (value.trim() === '') {
-                callback(new Error('请输入手机号!'));
+                this.notice("请填入手机号!",false);
             } else if (!telReg.test(value)) {
-                callback(new Error('请输入正确的手机号!'));
-            } else {
-                callback();
+                this.notice("请填入正确的手机号!",false);
             }
-        };
+            else {
+                this.notice('预约成功!',true);
+            }
+        }
 
-        rules = {
-            phoneNo: [{validator: this.validatePass, trigger: 'blur'}],
-        };
-
-
-        submit(formName: string) {
-            let el: any = this.$refs['' + formName + ''];
-            el.validate((valid: any) => {
-                if (valid) {
-                    alert(this.ruleForm.phoneNo);
-                } else {
-                    return false;
-                }
-            });
+        private notice(str: string,success:boolean) {
+            if (success){
+                this.$message({
+                    message: str,
+                    type: 'success'
+                });
+            }
+            else {
+                this.$message({
+                    message: str,
+                    type: 'warning'
+                });
+            }
+            this.ruleForm.phoneNo="";
         }
     }
 </script>

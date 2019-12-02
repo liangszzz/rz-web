@@ -1,27 +1,6 @@
 <template>
     <div class="about">
-        <header id="header">
-            <!-- Navigation -->
-            <nav id="navigatio-_bar" class="navbar navbar-default">
-                <div class="container">
-                    <div class="navbar-header">
-                        <div class="logo"> <a href="index.html"><img src="" alt="网站LOGO" /></a> </div>
-                        <!-- /Logo -->
-                        <button id="menu-slide" data-target="#navigation" aria-expanded="false" data-toggle="collapse" class="navbar-toggle collapsed"
-                                type="button"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navigation">
-                        <ul class="nav navbar-nav">
-                            <li><a href="/">主页</a></li>
-                            <li><a href="about">关于我们</a></li>
-                            <li><a href="contact-us.html">联系我们</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <!-- Navigation end -->
-        </header>
+        <Nav/>
 
         <!-- Intro -->
         <section class="inner-intro section-padding dark-overlay" style="height: 400px;">
@@ -191,28 +170,21 @@
         <!-- /Partners-Logo -->
 
         <!-- Footer -->
-        <footer id="footer" class="secondary-bg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                    </div>
-                    <div class="col-lg-8">
-                        <div class="row">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="container">
-                    <p> Copyright 2019 | eCapital Loan Company </p>
-                </div>
-            </div>
-        </footer>
+        <Footer/>
 
     </div>
 </template>
 
+<script  lang="ts">
+    // @ is an alias to /src
+    import Nav from '@/components/Nav.vue'
+    import Footer from '@/components/Footer.vue'
 
-<style scoped>
-
-</style>
+    export default {
+        name: 'home',
+        components: {
+            Nav,
+            Footer
+        }
+    }
+</script>

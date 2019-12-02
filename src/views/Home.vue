@@ -1,30 +1,7 @@
 <template>
   <div class="about">
     <!-- Header -->
-    <header id="header">
-      <!-- Navigation -->
-      <nav id="navigatio-_bar" class="navbar navbar-default">
-        <div class="container">
-          <div class="navbar-header">
-            <div class="logo"> <a href="index.html"><img src="" alt="网站LOGO" /></a> </div>
-            <!-- /Logo -->
-
-            <button id="menu-slide" data-target="#navigation" aria-expanded="false" data-toggle="collapse" class="navbar-toggle collapsed"
-                    type="button"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
-            </button>
-          </div>
-          <div class="collapse navbar-collapse" id="navigation">
-            <ul class="nav navbar-nav">
-              <li><a href="/">主页</a></li>
-              <li><a href="about">关于我们</a></li>
-              <li><a href="contact-us.html">联系我们</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <!-- Navigation end -->
-    </header>
-    <!-- /Header -->
+    <Nav/>
 
     <!-- Intro -->
     <section id="intro">
@@ -129,31 +106,11 @@
               <p>交完首付后，现车可立即提走，需要调配的车型2-3日内可提走。</p>
             </div>
           </div>
+
           <div class="col-lg-4">
-            <div class="info-box">
-              <div class="box-head">
-                <h5>在线预约</h5>
-              </div>
-              <div class="box-body">
-                <form>
-                  <div class="form-group">
-                    <input type="text" class="form-control" maxlength="11" placeholder="请填写手机号码">
-                  </div>
-                  <div class="form-group select">
-                    <select class="form-control">
-                      <option value="" disabled selected>请选择服务项目</option>
-                      <option>123</option>
-                      <option>123</option>
-                      <option>123</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <input type="submit" value="立即预约" class="btn">
-                  </div>
-                </form>
-              </div>
-            </div>
+            <Order/>
           </div>
+
         </div>
       </div>
     </section>
@@ -188,41 +145,21 @@
     <!-- /Partners-Logo -->
 
     <!-- Footer -->
-    <footer id="footer" class="secondary-bg">
-      <div class="container" style="height: 200px;">
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="footer-widgets">
-              <div class="footer-logo"> <img src="assets/images/logo-white.png" alt="网站LOGO"> </div>
-            </div>
-          </div>
-          <div class="col-lg-8">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="footer-widgets">
-                  <p>乐颂融资租赁（深圳）有限公司</p>
-                  <p>公司地址:深圳************地址</p>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="footer-widgets">
-                  <p>公司邮箱:<a href=""><strong>mail@weburl.com</strong></a></p>
-                  <p>联系电话:<a href="tel:5551234564513"><strong>(555) 1234564513</strong></a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <div class="container">
-          <p> Copyright 2019 | eCapital Loan Company </p>
-        </div>
-      </div>
-    </footer>
+   <Footer/>
 
   </div>
 </template>
-<script>
-  import jquery from '@../assets/js/jquery.min'
+
+<script  lang="ts">
+  // @ is an alias to /src
+  import Nav from '@/components/Nav.vue'
+  import Footer from '@/components/Footer.vue'
+  import Order from '@/components/Order.vue'
+
+  export default {
+    name: 'home',
+    components: {
+      Nav,Footer,Order
+    }
+  }
 </script>
